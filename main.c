@@ -3,12 +3,16 @@
 
 int main(int argc, char *argv[])
 {
-    int time;
+    int year;
     
-    printf("input seconds :");
-    scanf( "%i", &time);
+    printf("input year :");
+    scanf( "%i", &year);
     
-    printf("The time is %i:%i\n" , time/60, time%60);
+    printf("is the year %i leap year? %i\n",
+                        year,
+                        (year%4==0) && (year%100!=0)||(year%400==0)
+                        );
+     
     
    
    
